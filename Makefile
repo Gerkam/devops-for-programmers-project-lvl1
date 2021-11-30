@@ -1,4 +1,4 @@
-test:
+ci:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
 
 copy_env:
@@ -7,5 +7,5 @@ copy_env:
 server_up:
 	docker-compose up
 
-ci: copy_env test
+local_test: copy_env ci
 	rm .env
