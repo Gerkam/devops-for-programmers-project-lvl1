@@ -3,8 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./app:/app/
+      dockerfile: Dockerfile.production
+    image: gerkam/devops-for-programmers-project-lvl1:latest
     command: npm test
 
