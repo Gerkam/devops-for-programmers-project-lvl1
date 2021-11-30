@@ -10,3 +10,14 @@ services:
     ports:
       - "8080:8080"
     command: npm run dev
+  caddy:
+    image: caddy
+    depends_on: [app]
+    volumes:
+      - "./services/caddy/Caddyfile:/etc/caddy/Caddyfile"
+    ports:
+      - "80:80"
+      - "443:443"
+volumes:
+  caddy_data:
+  caddy_config:
