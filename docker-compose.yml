@@ -16,3 +16,7 @@ services:
   db:
     image: postgres
     restart: always
+    environment:
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_HOST: ${DATABASE_HOST}
