@@ -9,6 +9,8 @@ Requirements
 
     Make
 
+Docker image - https://hub.docker.com/r/gerkam/devops-for-programmers-project-lvl1
+
 <h3>Commands</h3>
     
     ci - запуск тестов через github actions
