@@ -15,7 +15,6 @@ Docker image - https://hub.docker.com/r/gerkam/devops-for-programmers-project-lv
     
     ci - запуск тестов через github actions
     local_test - запуск тестов локально
-    server_up - запуск сервера с приложением(необходимо заполнить .env)
 
 
 ### Hexlet tests and linter status:
